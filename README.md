@@ -1,6 +1,6 @@
 # tailwind-vue-boiler
 
-> Simple basic boiler plate for my vue apps.
+> Simple basic tailwind/vue boiler plate for my vue apps.
 > Contains Vuex, VueRouter, and obviously Tailwind
 
 ## Project setup
