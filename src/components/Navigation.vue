@@ -1,23 +1,42 @@
 <template>
-  <div class="container mx-auto px-6 py-2 flex justify-between item-center">
-    <router-link to="/">
-      <img  src="../assets/img/LogoMakr_0tiCID.png" alt="">
-      <!-- <p>Bambish Longboards</p> -->
-    </router-link>
-    <div class="block lg:hidden">
-      <button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-800 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
+  <nav class="bg-gray-600 sm:flex sm:justify-between sm:px-4 sm:py-3 sm:items-center">
+    <div class="flex items-center justify-between px-4 py-3 sm:p-0">
+      <div>
+        <img src="../assets/img/LogoMakr_0tiCID.png" alt="">
+      </div>
+      <div class="sm:hidden">
+        <button @click="isOpen = !isOpen" type="button" class="text-gray-300 hover:text-white focus:text-white focus:outline-none">
+      
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+            <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="hidden lg:block">
-      <ul class="inline-flex">
-        <li>Home</li>
-        <li class="pl-2">About</li>
-        <li class="pl-2">Contact</li>
-      </ul>
+    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      <router-link to="/" class=" block sm:inline-block px-2 py-1 text-white rounded hover:bg-gray-800">Home</router-link>
+      <router-link to="#" class="mt-1 block sm:inline-block px-2 py-1 text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+        About
+      </router-link>
+      <router-link to="#" class="mt-1 block sm:inline-block px-2 py-1 text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+        Shop
+      </router-link>
+      <router-link to="#" class="mt-1 block sm:inline-block px-2 py-1 text-white rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">
+        Contact
+      </router-link>
     </div>
-  </div>
+  </nav>
 </template>
+
+
+<script>
+export default {
+  name: 'Nav',
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+}
+</script>
