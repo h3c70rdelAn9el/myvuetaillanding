@@ -1,5 +1,5 @@
 <template>
-  <section class="call h-200 -mt-32">
+  <section class="call  h-200 -mt-32" >
     <div class="container mx-auto px-6 text-center py-20">
       <h2 class="my-4 text-2xl text-gray-100">
         Now in Stock

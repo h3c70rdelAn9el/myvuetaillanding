@@ -3,6 +3,7 @@
     <Hero />
     <Features />
     <ActionCall />
+    <Footer />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Hero from '@/components/Hero.vue';
 import Features from '@/components/Features.vue'
 import ActionCall from '@/components/ActionCall.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
     Hero,
     Features,
-    ActionCall
+    ActionCall,
+    Footer
   }
 }
 </script>
