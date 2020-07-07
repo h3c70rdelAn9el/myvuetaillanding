@@ -1,7 +1,6 @@
 # tailwind-landing
 
-> Simple basic tailwind/vue boiler plate for my vue apps.
-> Contains Vuex, VueRouter, and obviously Tailwind
+> simple landing page built with vue and tailwindcss.
 
 ## Project setup
 ```
