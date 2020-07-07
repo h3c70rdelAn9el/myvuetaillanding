@@ -1,7 +1,8 @@
 <template>
   <div class="container mx-auto px-6 py-2 flex justify-between item-center">
     <router-link to="/">
-      Home
+      <img  src="../assets/img/LogoMakr_0tiCID.png" alt="">
+      <!-- <p>Bambish Longboards</p> -->
     </router-link>
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-800 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
@@ -14,8 +15,8 @@
     <div class="hidden lg:block">
       <ul class="inline-flex">
         <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li class="pl-2">About</li>
+        <li class="pl-2">Contact</li>
       </ul>
     </div>
   </div>

@@ -18,4 +18,7 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  fontFamily: {
+    'sans-serif': ['Arimo', 'sans-serif']
+  }
 }
